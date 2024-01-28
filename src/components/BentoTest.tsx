@@ -5,7 +5,7 @@ import { lgLayout, mdLayout, smLayout } from "@/scripts/utils/bento-layout";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
-const BentoBox = ({ projects }) => {
+const BentoBox = ({ projects }: any) => {
   const [rowHeight, setRowHeight] = useState(280);
 
   const timeoutRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -64,9 +64,28 @@ const BentoBox = ({ projects }) => {
           handleDragStop(element)
         }
       >
-        {projects.map((project, id) => (
-          <div key={id}>{project.title}</div>
-        ))}
+        {projects.map(
+          (
+            project: {
+              title:
+                | string
+                | number
+                | boolean
+                | React.ReactElement<
+                    any,
+                    string | React.JSXElementConstructor<any>
+                  >
+                | Iterable<React.ReactNode>
+                | React.ReactPortal
+                | React.PromiseLikeOfReactNode
+                | null
+                | undefined;
+            },
+            id: React.Key | null | undefined
+          ) => (
+            <div key={id}>{project.title}</div>
+          )
+        )}
       </ResponsiveGridLayout>
     </div>
   );
