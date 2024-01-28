@@ -6,6 +6,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "ik.imagekit.io",
       },
+      {
+        protocol: "https",
+        hostname: "i2-prod.walesonline.co.uk",
+      },
+      {
+        protocol: "https",
+        hostname: "www.berkeleygroup.co.uk",
+      },
+      {
+        protocol: "https",
+        hostname: "www.fromthemurkydepths.co.uk",
+      },
     ],
   },
 };
