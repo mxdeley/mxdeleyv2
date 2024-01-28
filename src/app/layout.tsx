@@ -1,5 +1,9 @@
+import HorizontalHeader from "@/components/HorizontalHeader";
+import SectionContainer from "@/components/SectionContainer";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import "react-grid-layout/css/styles.css";
+import "react-resizable/css/styles.css";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <HorizontalHeader />
+      </body>
     </html>
   );
 }
