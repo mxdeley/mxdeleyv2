@@ -70,12 +70,7 @@ interface AllProjects {
   image: string;
 }
 
-export default function Projects({
-  title,
-  category,
-  description,
-  image,
-}: AllProjects) {
+export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [projects, setProjects] = useState<AllProjects[]>([]);
 
