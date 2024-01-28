@@ -62,6 +62,7 @@ const Project = [
 ];
 
 interface AllProjects {
+  id: number;
   slug: string;
   title: string;
   category: string;
