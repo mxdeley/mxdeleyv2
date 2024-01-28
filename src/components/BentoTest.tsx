@@ -47,7 +47,7 @@ const BentoBox = () => {
   }, []);
 
   return (
-    <div className="react-grid-container max-w-5xl mx-auto border rounded-lg m-4 p-2">
+    <div className="react-grid-container border rounded-lg m-4 p-2">
       <ResponsiveGridLayout
         layouts={{ lg: lgLayout, md: mdLayout, sm: smLayout }}
         breakpoints={{ lg: 1199, md: 799, sm: 374 }}

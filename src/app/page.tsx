@@ -1,13 +1,9 @@
-import BentoBox from "@/components/BentoTest";
+import { HomepageCarousel } from "@/components/Homepage-Carousel";
+
 export default function Home() {
   return (
-    <main>
-      <BentoBox />
+    <main className="flex h-screen flex-col items-center justify-center">
+      <HomepageCarousel />
     </main>
   );
-}
-{
-  /* <div className="divide-y divide-accent-foreground dark:divide-accent">
-  <div className="mx-auto bento-md:-mx-[5vw] bento-lg:-mx-[20vw]"></div>
-</div>; */
 }

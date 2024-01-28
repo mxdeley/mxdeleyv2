@@ -58,9 +58,9 @@ const HorizontalHeader = () => {
     : { width: "48px", transition: "width 0.5s ease-in-out" };
 
   return (
-    <div className="text-white fixed bottom-0 flex mx-auto justify-center w-full pb-6 z-50 ">
+    <div className="fixed bottom-0 flex mx-auto justify-center w-full pb-6 z-50 ">
       <div
-        className="h-12 w-full flex justify-center items-center border border-stone-700 rounded-md bg-stone-900 p-2 space-x-10"
+        className="h-12 w-full flex justify-center items-center border border-zinc-700 rounded-md bg-zinc-900 p-2 space-x-10"
         style={divStyle}
       >
         {showIcons[2] && (
@@ -69,8 +69,8 @@ const HorizontalHeader = () => {
               size={28}
               className={
                 isActive("/")
-                  ? "items-center hover:text-stone-50 text-stone-50"
-                  : "items-center hover:text-stone-50  text-stone-400"
+                  ? "items-center hover:text-zinc-50 text-zinc-50"
+                  : "items-center hover:text-zinc-50  text-zinc-400"
               }
             />
           </Link>
@@ -81,8 +81,8 @@ const HorizontalHeader = () => {
               size={28}
               className={
                 isActive("/projects")
-                  ? "items-center hover:text-stone-50 text-stone-50"
-                  : "items-center hover:text-stone-50  text-stone-400"
+                  ? "items-center hover:text-zinc-50 text-zinc-50"
+                  : "items-center hover:text-zinc-50  text-zinc-400"
               }
             />
           </Link>
@@ -93,21 +93,25 @@ const HorizontalHeader = () => {
               size={28}
               className={
                 isActive("/blog")
-                  ? "items-center hover:text-stone-50 text-stone-50"
-                  : "items-center hover:text-stone-50  text-stone-400"
+                  ? "items-center hover:text-zinc-50 text-zinc-50"
+                  : "items-center hover:text-zinc-50  text-zinc-400"
               }
             />
           </Link>
         )}
-        <MenuIcon size={28} onClick={handleClick} className="cursor-pointer" />
+        <MenuIcon
+          size={28}
+          onClick={handleClick}
+          className="cursor-pointer text-zinc-50"
+        />
         {showIcons[0] && (
           <Link href={"/resources"}>
             <BookIcon
               size={28}
               className={
                 isActive("/resources")
-                  ? "items-center hover:text-stone-50 text-stone-50"
-                  : "items-center hover:text-stone-50  text-stone-400"
+                  ? "items-center hover:text-zinc-50 text-zinc-50"
+                  : "items-center hover:text-zinc-50  text-zinc-400"
               }
             />
           </Link>
@@ -118,8 +122,8 @@ const HorizontalHeader = () => {
               size={28}
               className={
                 isActive("/cv")
-                  ? "items-center hover:text-stone-50 text-stone-50"
-                  : "items-center hover:text-stone-50  text-stone-400"
+                  ? "items-center hover:text-zinc-50 text-zinc-50"
+                  : "items-center hover:text-zinc-50  text-zinc-400"
               }
             />
           </Link>
@@ -128,7 +132,7 @@ const HorizontalHeader = () => {
           <li className="flex justify-end">
             <Dialog>
               <DialogTrigger asChild>
-                <div className="items-center hover:text-stone-50 text-stone-400 flex hover:cursor-pointer">
+                <div className="items-center hover:text-zinc-50 text-zinc-400 flex hover:cursor-pointer">
                   <MailIcon size={28} />
                 </div>
               </DialogTrigger>
