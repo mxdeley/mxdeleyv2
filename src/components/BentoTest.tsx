@@ -1,7 +1,7 @@
 "use client";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import React, { useEffect, useState } from "react";
-import { lgLayout, mdLayout, smLayout } from "@/scripts/utils/bento-layout";
+import { lgLayout, mdLayout, smLayout } from "@/src/scripts/utils/bento-layout";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
