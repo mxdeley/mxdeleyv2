@@ -18,6 +18,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.fromthemurkydepths.co.uk",
       },
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+      },
     ],
   },
 };
