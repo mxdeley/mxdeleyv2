@@ -11,9 +11,11 @@
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
+    "@t3-oss/env-nextjs": "^0.8.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "contentlayer": "^0.3.4",
+    "date-fns": "^3.3.1",
     "embla-carousel-autoplay": "8.0.0-rc21",
     "embla-carousel-react": "8.0.0-rc21",
     "lucide-react": "^0.316.0",
@@ -29,6 +31,7 @@
     "shiki": "1.0.0-beta.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4",
     "zustand": "^4.5.0"
   },
   "devDependencies": {

@@ -1,44 +1,42 @@
+// contentlayer.config.js
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
-
-/**  @type {import('contentlayer/source-files').ComputedFields} */
-const computedFields = {
+var computedFields = {
   slug: {
     type: "string",
-    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    resolve: (doc) => `/${doc._raw.flattenedPath}`
   },
   slugAsParams: {
     type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
-  },
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/")
+  }
 };
-
-export const Post = defineDocumentType(() => ({
+var Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `blog/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
-      type: "string",
+      type: "string"
     },
     date: {
       type: "date",
-      required: true,
+      required: true
     },
     published: {
       type: "boolean",
-      default: true,
+      default: true
     },
     image: {
       type: "string",
-      // required: true,
+      required: true
     },
     authors: {
       // Reference types are not embedded.
@@ -47,37 +45,35 @@ export const Post = defineDocumentType(() => ({
       // of: Author,
       type: "list",
       of: { type: "string" },
-      required: true,
-    },
+      required: true
+    }
   },
-  computedFields,
+  computedFields
 }));
-
-export const Author = defineDocumentType(() => ({
+var Author = defineDocumentType(() => ({
   name: "Author",
   filePathPattern: `authors/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
-      type: "string",
+      type: "string"
     },
     avatar: {
       type: "string",
-      // required: true,
+      required: true
     },
     twitter: {
       type: "string",
-      required: true,
-    },
+      required: true
+    }
   },
-  computedFields,
+  computedFields
 }));
-
-export default makeSource({
+var contentlayer_config_default = makeSource({
   contentDirPath: "src/content",
   documentTypes: [Post, Author],
   mdx: {
@@ -98,16 +94,22 @@ export default makeSource({
           },
           onVisitHighlightedWord(node) {
             node.properties.classname.push("word--highlighted");
-          },
-        },
+          }
+        }
       ],
       [rehypeAutolinkHeadings],
       {
         properties: {
           classname: ["subheading-anchor"],
-          ariaLabel: "Link to section",
-        },
-      },
-    ],
-  },
+          ariaLabel: "Link to section"
+        }
+      }
+    ]
+  }
 });
+export {
+  Author,
+  Post,
+  contentlayer_config_default as default
+};
+//# sourceMappingURL=compiled-contentlayer-config-NRVUT2QV.mjs.map

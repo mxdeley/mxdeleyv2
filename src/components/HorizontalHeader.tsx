@@ -11,7 +11,7 @@ import {
   ScrollIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { useStore } from "@/lib/store";
+import { useStore } from "@/src/lib/store";
 import {
   Dialog,
   DialogClose,

@@ -1,4 +1,4 @@
-import HorizontalHeader from "@/components/HorizontalHeader";
+import HorizontalHeader from "@/src/components/HorizontalHeader";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "react-grid-layout/css/styles.css";
