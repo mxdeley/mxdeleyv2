@@ -1,5 +1,4 @@
-import BentoBox from "@/components/BentoTest";
-import { Button } from "@/components/ui/button";
+import BentoBox from "@/src/components/BentoTest";
 
 export default function Projects() {
   return (
