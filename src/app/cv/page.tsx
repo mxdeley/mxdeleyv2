@@ -128,7 +128,7 @@ export default function CV() {
           <h2 className="font-bold text-lg">Work Experience</h2>
           <div>
             <h3 className="font-bold">Austin Partnership</h3>
-            <h4 className="text-zinc-700 text-sm">2022-Current</h4>
+            <h4 className="text-zinc-700 text-xs">2022-Current</h4>
             <p className="text-zinc-700 text-sm mt-1">
               I design steel, concrete, masonry, timber and aluminium structures
               to the Eurocodes. I am experienced in Tekla Tedds, Structural
@@ -142,7 +142,7 @@ export default function CV() {
 
           <div>
             <h3 className="font-bold">madeleydesignstudio (Freelancing)</h3>
-            <h4 className="text-zinc-700 text-sm">2021-Current</h4>
+            <h4 className="text-zinc-700 text-xs">2021-Current</h4>
             <p className="text-zinc-700 text-sm mt-1">
               I work on a diverse range of web development projects. My primary
               focus has been leveraging the power of Next.js as a full-stack
@@ -154,7 +154,7 @@ export default function CV() {
           <div className="max-w-2xl flex flex-col justify-end space-y-2 ">
             <div className="ml-2">
               <h5 className="text-sm font-semibold"> - Infinitim</h5>
-              <h4 className="text-zinc-700 text-sm">2021-2023</h4>
+              <h4 className="text-zinc-700 text-xs">2021-2023</h4>
               <p className="text-zinc-700 text-sm mt-1">
                 As a result of my experience with the Fungible Cabin, I was
                 inspired to establish my own digital marketing agency. I took
@@ -168,7 +168,7 @@ export default function CV() {
             </div>
             <div className="ml-2">
               <h5 className="text-sm font-semibold">- The Fungible Cabin</h5>
-              <h4 className="text-zinc-700 text-sm">2021-2022</h4>
+              <h4 className="text-zinc-700 text-xs">2021-2022</h4>
               <p className="text-zinc-700 text-sm mt-1">
                 During the NFT boom in 2021, two friends and I co-created
                 &apos;The Fungible Cabin&apos;. My role initially involved
@@ -184,26 +184,44 @@ export default function CV() {
       </div>
       <Separator />
       <div className="flex justify-start w-full">
-        <div>
+        <div className="flex flex-col space-y-4">
           <h2 className="text-lg font-bold">Education</h2>
           <div>
-            <h3>Leeds Beckett</h3>
-            <h4 className="text-zinc-700">2019-2022</h4>
-            <p className="text-zinc-700">
+            <h3 className="font-semibold">Leeds Beckett</h3>
+            <h4 className="text-zinc-700 text-xs">2019-2022</h4>
+            <p className="text-zinc-700 text-sm">
               I achieved a 2:1 in civil engineering.
             </p>
-            <h5>Courses</h5>
-            <p>Material Science</p>
-            <p>Structural Analysis (Advanced)</p>
-            <p>Thermodynamics</p>
+            <h5 className="text-sm underline mt-1">Courses</h5>
+            <p className="text-zinc-700 text-sm">Material Science</p>
+            <p className="text-zinc-700 text-sm">
+              Structural Analysis (Advanced)
+            </p>
+            <p className="text-zinc-700 text-sm">Fluid Mechanics</p>
+            <p className="text-zinc-700 text-sm">
+              Engineering Skills -{">"} Python FEA/FEM Automation
+            </p>
           </div>
           <div>
-            <h3>Self-Taught Programmer</h3>
-            <h4 className="text-zinc-700">2019-Onwards</h4>
-            <h5>Courses</h5>
-            <p>Boot.dev</p>
-            <p>Papareact</p>
-            <p>Codeacademy</p>
+            <h3 className="font-semibold">Self-Taught Programmer</h3>
+            <h4 className="text-zinc-700 text-xs">2019-Onwards</h4>
+            <h5 className="text-sm underline mt-1">Courses</h5>
+            <p className="text-zinc-700 text-sm">
+              Boot.dev -{">"} Backend Development
+            </p>
+            <p className="text-zinc-700 text-sm">
+              Papareact -{">"} Fullstack Development
+            </p>
+            <p className="text-zinc-700 text-sm">
+              Codeacademy -{">"} Fullstack Development
+            </p>
+            <p className="text-zinc-700 text-sm">
+              Code with Antonio -{">"} Fullstack Development
+            </p>
+            <p className="text-zinc-700 text-sm">
+              Primeagen - Algorithms & Data Structures -{">"} Backend
+              Development
+            </p>
           </div>
         </div>
       </div>
