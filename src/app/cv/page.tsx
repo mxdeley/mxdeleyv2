@@ -26,18 +26,14 @@ export default function CV() {
           <div className="space-y-2 flex flex-col">
             <p className="flex items-center space-x-2 text-zinc-700">
               <MapPinIcon size={16} />
-              <h3>Cardiff</h3>
+              <h3>Current City: Cardiff</h3>
             </p>
-            <p className="flex items-center space-x-2 text-zinc-700">
-              <MapPinIcon size={16} />
-              <h3>Derby</h3>
-            </p>
-            <div className="flex justify-start w-full space-x-2">
+            <div className="flex justify-start w-full space-x-2 mt-4">
               <Link href={"https://read.cv/mxdeley"}>
                 <Image
                   src={"/readcv.svg"}
-                  height={16}
-                  width={16}
+                  height={20}
+                  width={20}
                   alt="readcv"
                   className="transform transition duration-500 hover:scale-125"
                 />
@@ -45,8 +41,8 @@ export default function CV() {
               <Link href={"https://twitter.com/mxdeley"}>
                 <Image
                   src={"/xcom.svg"}
-                  height={16}
-                  width={16}
+                  height={20}
+                  width={20}
                   alt="xcom"
                   className="transform transition duration-500 hover:scale-125"
                 />
@@ -54,16 +50,16 @@ export default function CV() {
               <Link href={"https://bento.me/mxdeley"}>
                 <Image
                   src={"/bento.svg"}
-                  height={16}
-                  width={16}
+                  height={20}
+                  width={20}
                   alt="xcom"
                   className="transform transition duration-500 hover:scale-125"
                 />
               </Link>
               <Link href={"https://github.com/mxdeley"}>
                 <GithubIcon
-                  size={16}
-                  className="transform transition duration-500 hover:scale-125 text-zinc-700"
+                  size={20}
+                  className="transform transition duration-500 hover:scale-125 text-[#a8a29e]"
                 />
               </Link>
             </div>
