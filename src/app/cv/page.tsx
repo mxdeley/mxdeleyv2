@@ -84,14 +84,11 @@ export default function CV() {
           <p className="text-sm">
             With more than four years of experience as a freelance web
             developer, I&apos;ve honed my skills at my own design studio{" "}
-            <Link href="#" className="text-zinc-950">
+            <Link href="#" className="text-zinc-950 font-bold">
               madeleydesignstudio
             </Link>
             . You can find my preferred tech stack{" "}
-            <Link
-              href="./resources/tech_stack"
-              className="text-zinc-950 font-bold"
-            >
+            <Link href="./cv/web-stack" className="text-zinc-950 font-bold">
               here
             </Link>
             . Additionally, I hold a BEng in civil engineering and have spent
@@ -147,40 +144,38 @@ export default function CV() {
             <h3 className="font-bold">madeleydesignstudio (Freelancing)</h3>
             <h4 className="text-zinc-700 text-sm">2021-Current</h4>
             <p className="text-zinc-700 text-sm mt-1">
-              I have successfully worked on a diverse range of web development
-              projects for my esteemed client base. My primary focus has been
-              leveraging the power of Next.js as a full-stack framework.
-              However, as the owner of my own studio, I have also dabbled in
-              marketing, design, and sales. This multifaceted experience has
-              allowed me to gain valuable insights and offer holistic solutions
-              to my clients.
+              I work on a diverse range of web development projects. My primary
+              focus has been leveraging the power of Next.js as a full-stack
+              framework. I have also dabbled in marketing, design, and sales.
+              This multifaceted experience has allowed me to gain valuable
+              insights and offer holistic solutions to my clients.
             </p>
           </div>
           <div className="max-w-2xl flex flex-col justify-end space-y-2 ">
-            <div>
-              <h5 className="text-sm font-semibold">Infinitim</h5>
+            <div className="ml-2">
+              <h5 className="text-sm font-semibold"> - Infinitim</h5>
               <h4 className="text-zinc-700 text-sm">2021-2023</h4>
               <p className="text-zinc-700 text-sm mt-1">
                 As a result of my experience with the Fungible Cabin, I was
                 inspired to establish my own digital marketing agency. I took
-                pleasure in crafting marketing websites for clients based in
-                Derby. My tenure at Infinitim provided me with an opportunity to
-                expand my expertise in various areas such as digital marketing,
-                web development, sales, and design. Additionally, I gained
-                proficiency in utilizing tools like Figma, Midjourney, and
-                Blender.
+                pleasure in crafting marketing websites (Landing Pages) for
+                clients based in Derby. My tenure at Infinitim provided me with
+                an opportunity to expand my expertise in various areas such as
+                digital marketing, web development, sales, and design.
+                Additionally, I gained proficiency in utilizing tools like
+                Figma, Midjourney, and various analytical tools.
               </p>
             </div>
-            <div>
-              <h5 className="text-sm font-semibold">The Fungible Cabin</h5>
+            <div className="ml-2">
+              <h5 className="text-sm font-semibold">- The Fungible Cabin</h5>
               <h4 className="text-zinc-700 text-sm">2021-2022</h4>
               <p className="text-zinc-700 text-sm mt-1">
                 During the NFT boom in 2021, two friends and I co-created
                 &apos;The Fungible Cabin&apos;. My role initially involved
                 working as a designer with Adobe Illustrator and Photoshop.
                 Subsequently, I ventured into solidity development, which
-                introduced me to the realm of web development and humbled me in
-                understanding its intricacies. This experience marked the
+                introduced me to the realm of web development and quickly made
+                me realise I had a lot to learn. This experience marked the
                 beginning of my journey as a web developer.
               </p>
             </div>
