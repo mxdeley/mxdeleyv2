@@ -13,20 +13,24 @@ export default function CV() {
               Experienced engineer working in tech and construction. Skilled in
               FEA/FEM, automation and full stack web development.
             </p>
-            <p className="text-zinc-700">
+            {/* <p className="text-zinc-700">
               Click{" "}
               <Link href="#" className="text-zinc-950">
                 here
               </Link>{" "}
               to find out why I believe it is integral to understand both
               industries.
-            </p>
+            </p> */}
           </div>
 
           <div className="space-y-2 flex flex-col">
             <p className="flex items-center space-x-2 text-zinc-700">
               <MapPinIcon size={16} />
               <h3>Cardiff</h3>
+            </p>
+            <p className="flex items-center space-x-2 text-zinc-700">
+              <MapPinIcon size={16} />
+              <h3>Derby</h3>
             </p>
             <div className="flex justify-start w-full space-x-2">
               <Link href={"https://read.cv/mxdeley"}>
@@ -120,7 +124,8 @@ export default function CV() {
               structures to the Eurocodes. I am experienced in Tekla Tedds,
               Structural Designer, StaTiCa, Fisher Fixperience and Hilti. Hand
               and python script calculations. FEA/FEM modelling with OpenSeesPy
-              and Gmesh.
+              and Gmesh. Parametric modelling with Rhino, grasshopper and
+              KiWi3d.
             </p>
           </div>
 
