@@ -1,3 +1,4 @@
+import { Separator } from "@/src/components/ui/separator";
 import { GithubIcon, MapPinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +29,7 @@ export default function CV() {
               <MapPinIcon size={16} />
               <h3>Current City: Cardiff</h3>
             </p>
-            <div className="flex justify-start w-full space-x-2 mt-4">
+            <div className="flex justify-start w-full space-x-4 mt-4">
               <Link href={"https://read.cv/mxdeley"}>
                 <Image
                   src={"/readcv.svg"}
@@ -87,20 +88,36 @@ export default function CV() {
               madeleydesignstudio
             </Link>
             . You can find my preferred tech stack{" "}
-            <Link href="./resources/tech_stack" className="text-zinc-950">
+            <Link
+              href="./resources/tech_stack"
+              className="text-zinc-950 font-bold"
+            >
               here
             </Link>
             . Additionally, I hold a BEng in civil engineering and have spent
             two years working as a Structural Engineer. I leverage my
             programming capabilities to automate the design process using Python
             scripts. Feel free to check out my preferred libraries{" "}
-            <Link href="#" className="text-zinc-950">
+            <Link href="#" className="text-zinc-950 font-bold">
               here.
             </Link>
           </p>
         </div>
       </div>
-      <div className="flex justify-start w-full text-zinc-700">
+      <div className="flex justify-start space-x-10 w-full text-zinc-700">
+        <div>
+          <h2 className="text-md font-bold text-zinc-950">Skills</h2>
+          <div className="grid grid-cols-3 gap-x-4">
+            <p className="text-sm">• Structural Design & Analysis</p>
+            <p className="text-sm">• Material Science</p>
+            <p className="text-sm">• FEA/FEM</p>
+            <p className="text-sm">• Automation</p>
+            <p className="text-sm">• Web Dev</p>
+            <p className="text-sm">• AI</p>
+            <p className="text-sm">• Design</p>
+            <p className="text-sm">• Marketing</p>
+          </div>
+        </div>
         <div>
           <h2 className="text-md font-bold text-zinc-950">Hobbies</h2>
           <p className="text-sm">• MMA</p>
@@ -108,27 +125,28 @@ export default function CV() {
           <p className="text-sm">• Fishing</p>
         </div>
       </div>
-
+      <Separator />
       <div className="flex justify-start w-full">
-        <div className="space-y-2">
+        <div className="space-y-4">
           <h2 className="font-bold text-lg">Work Experience</h2>
           <div>
             <h3 className="font-bold">Austin Partnership</h3>
             <h4 className="text-zinc-700 text-sm">2022-Current</h4>
-            <p className="text-zinc-700 text-sm">
-              I have designed steel, concrete, masonry, timber and aluminium
-              structures to the Eurocodes. I am experienced in Tekla Tedds,
-              Structural Designer, StaTiCa, Fisher Fixperience and Hilti. Hand
-              and python script calculations. FEA/FEM modelling with OpenSeesPy
-              and Gmesh. Parametric modelling with Rhino, grasshopper and
-              KiWi3d.
+            <p className="text-zinc-700 text-sm mt-1">
+              I design steel, concrete, masonry, timber and aluminium structures
+              to the Eurocodes. I am experienced in Tekla Tedds, Structural
+              Designer, Portal Frame Designer, StaTiCa, Fisher Fixperience and
+              Hilti. I can write traditional hand calculations and also utilise
+              pythons scripting capabilities to automate design calculations.
+              FEA/FEM modelling with OpenSeesPy and Gmesh. Parametric modelling
+              with Rhino, grasshopper and KiWi3d.
             </p>
           </div>
 
           <div>
-            <h3 className="font-bold">madeleydesignstudio</h3>
+            <h3 className="font-bold">madeleydesignstudio (Freelancing)</h3>
             <h4 className="text-zinc-700 text-sm">2021-Current</h4>
-            <p className="text-zinc-700 text-sm">
+            <p className="text-zinc-700 text-sm mt-1">
               I have successfully worked on a diverse range of web development
               projects for my esteemed client base. My primary focus has been
               leveraging the power of Next.js as a full-stack framework.
@@ -142,7 +160,7 @@ export default function CV() {
             <div>
               <h5 className="text-sm font-semibold">Infinitim</h5>
               <h4 className="text-zinc-700 text-sm">2021-2023</h4>
-              <p className="text-zinc-700 text-sm">
+              <p className="text-zinc-700 text-sm mt-1">
                 As a result of my experience with the Fungible Cabin, I was
                 inspired to establish my own digital marketing agency. I took
                 pleasure in crafting marketing websites for clients based in
@@ -156,7 +174,7 @@ export default function CV() {
             <div>
               <h5 className="text-sm font-semibold">The Fungible Cabin</h5>
               <h4 className="text-zinc-700 text-sm">2021-2022</h4>
-              <p className="text-zinc-700 text-sm">
+              <p className="text-zinc-700 text-sm mt-1">
                 During the NFT boom in 2021, two friends and I co-created
                 &apos;The Fungible Cabin&apos;. My role initially involved
                 working as a designer with Adobe Illustrator and Photoshop.
@@ -169,6 +187,7 @@ export default function CV() {
           </div>
         </div>
       </div>
+      <Separator />
       <div className="flex justify-start w-full">
         <div>
           <h2 className="text-lg font-bold">Education</h2>
