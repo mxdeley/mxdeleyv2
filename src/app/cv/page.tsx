@@ -163,7 +163,7 @@ export default function CV() {
                 an opportunity to expand my expertise in various areas such as
                 digital marketing, web development, sales, and design.
                 Additionally, I gained proficiency in utilizing tools like
-                Figma, Midjourney, and various analytical tools
+                Figma, Midjourney, and various analytical tools.
               </p>
             </div>
             <div className="ml-2">
