@@ -1,0 +1,336 @@
+---
+title: What is a Simply Supported Beam?
+description: A quick guide on what a simply supported beam is.
+date: "2023-02-27"
+image: https://structuralbasics.com/wp-content/uploads/2022/08/supports-1024x252.png
+authors:
+  - mxdeley
+---
+
+## 🙋‍♀️ What is a simply supported beam?
+
+A simply supported beam is a static system acting as a beam element in bending and shear – in some situations also compression or tension due to axial forces. It’s characterized by having two supports, a roller and a pinned support. Those supports allow for rotation.
+
+### 💡
+
+A **roller support** takes up only vertical forces, while the **pinned support** takes up vertical and horizontal forces.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/supports-1024x252.png)
+
+Pinned and Roller support.
+
+We are surrounded by simply supported beams in our daily lives.
+
+**Here are 7 examples of simply supported beams in real life**
+
+- One span precast concrete beam
+- One span precast concrete slab
+- One span bridge deck supported by bearings
+- Timber flat roof with [secondary beams](https://structuralbasics.com/flat-roof-beam-design/#:~:text=One%20example%20of%20the%20flat%20roof%20system)
+- One span steel beam
+- Rafter beams supported by 2 Purlin beams
+- Benches supported on both ends (Example in the following)
+
+## 👆 The static system of the simply supported beam
+
+The simply supported beam is in most cases a horizontal beam having a roller and a pinned support on the ends. The beam can take normal and shear forces as well as bending moments.
+
+Let’s have a look at the static system.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/Simply-supported-beam-1024x205.png)
+
+Static system of a simply supported beam
+
+It can be seen from the picture that the pinned support (a) takes up
+
+- a vertical reaction force �� and
+- a horizontal reaction force ��
+
+The roller support (b) takes up
+
+- a vertical reaction force ��
+
+## 🏢 The simply supported beam applied on real structures
+
+Understanding the static system of a structure is probably one of the hardest parts about statics and structural engineering in the beginning.
+
+From my experience it’s also poorly taught at university and there is very little information about it online as well, isn’t it?
+
+So let’s look at some applied examples.
+
+- The secondary beams of a flat roof. Note that the primary beams can also be simply supported. In our example only the secondary beams are simply supported.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/primary_beam_flat_roof-1024x658.png)
+
+Secondary beam as simply supported beam.
+
+- The wooden beams/panels of this bench are simply supported.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/bench_static_system-1024x423.png)
+
+Example of a simply supported beam. Bench.
+
+## ⬇️ 2 Examples of loading situations
+
+We wanna keep it a bit joyful and realistic in this blog, right? So let’s look at loading scenarios we all can relate to.
+
+### 🧍 Me sitting and meditating on a bench – A Point load
+
+Let’s look at the example where a person – in this case me😊 – sits on bench and meditates🧘‍♂️. Let’s assume i gained a little bit of weight compared to the last [tutorial](https://structuralbasics.com/cantilever-moment-forces/) and now i weigh 76 kg.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/pointload_bench-1024x471.png)
+
+Me meditating on a simply supported bench.
+
+This weight of 76 kg can directly be translated into 0.745 kN.
+
+Now because I sit in a specific point with my butt, the load is concentrated and therefore the 0.745 kN can be approximated as a point load on the simply supported beam(s).
+
+### ❗
+
+**_Watch out:_** Translating the self-weight to a point load is a rough approximation and simplification. In reality, the self-weight creates (most likely) 2 unevenly distributed line/area loads.  
+Structural engineering is based on many approximations to simplify the calculations. Another good example of that are the wind and snow loads, which are calculated in area loads (��/�2) in Codes. Wind is quite complex and dependent on many factors and geometries, which can’t be included in normal engineering design due to economic reasons. Therefore, Codes try to simplify these complex wind situations with formulas based on experiments which are applicable to many different design situations.
+
+❗So be always aware of your approximations and consider if they are applicable for what you want to achieve.
+
+As we want to demonstrate a “real-life” example of a point load, this point load is not 100% realistic.
+
+However, there are almost no “100%-correct” point loads and a person sitting on a bench comes close enough to a point load applied to a bench for dimensioning the thickness and width of the timber beam.
+
+Alright, let’s get back to the beam model.
+
+The 3 beams of the bench equal 1 beam when we calculate moments and shear forces with this simple approach.
+
+We can therefore apply the Point load on the static system of the simply supported beam.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/Pointload_beam-1024x211.png)
+
+Point load applied on bench.
+
+### ‍🏋️ The self-weight of a timber beam – Line load
+
+So, the timber beam has a self-weight, right? I guess everyone can image that when you try to lift it up.
+
+In structural engineering, we also call this **dead load**, and it’s always equally/uniformly distributed for horizontal elements.
+
+For the case of the timber secondary beam, the self-weight per � is calculated as
+
+Density�⋅Cross-sectional Area A
+
+The density of timber beams is found either from manufacturer tables online or Standards.
+
+The cross-sectional area of the timber beam is taken from the previous [article,](https://structuralbasics.com/flat-roof-beam-design/#:~:text=%F0%9F%93%8F-,Assumption%20of%20width%20and%20height%20of%20beams,-We%20are%20defining) where we designed the flat roof and its beams.
+
+�=380kg/m3
+
+�=ℎ⋅�=28800mm2
+
+380kg/m3⋅28800mm2=0.11kN/m
+
+Now, it always helps to translate kN in non-engineering language. 0.11 kN/m is also 10.9 kg per �.
+
+That’s roughly as much as a **French bulldog dog** – but per meter and per beam! So in case of our timber beam where we have a span of 5� the dead load of the wood is equal to 5 dogs🐕.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/5dogs_on_beam-1024x673.png)
+
+The dead load of the secondary wood beam is roughly as much as 5 french bulldogs.
+
+This **line load** (kN/m) – or those 5 dogs –  can now also be applied to the **simply supported beam.**
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/Line-load-1-1024x213.png)
+
+Line load applied on simply supported beam.
+
+## 🧮 Hand calculation of bending moment and shear forces – simply supported beam
+
+Now in order to design the thickness and material properties of the bench, the secondary beam – or any other simply supported structure the forces and moments acting in the beam need to be calculated.
+
+In general, statically determinate structures such as the cantilever or the simply supported beams need to fullfill three equilibrium conditions:
+
+- Horizontal equilibrium ∑�=0: The sum of all horizontal loads and reactions is 0.
+- Vertical equilibrium ∑�=0: The sum of all vertical loads and reactions is 0.
+- Moment equilibrium ∑�=0: The sum of all moments is 0.
+
+Let’s continue with the 2 loading situations that we are now familiar with – point and line load.
+
+### 🔎 Bending moment and shear forces of a beam – Point load on bench
+
+1. The first thing we always calculate in determinate structures are the **reaction forces/moment**. In our case that is ��,�� at support (a) and �� at support (b) due to the equilibrium conditions.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/reactions_point-1024x280.png)
+
+Point load applied on simply supported beam.
+
+∑�=0:��=0
+
+∑�=0:��+��–0.745kN=0= -> ��=��=0.7452kN=0.3725kN
+
+∑�=0:��=0
+
+2. Calculation of the **shear and moment distribution** along the beam due to the reaction forces. The parameter x is introduced as the length between point a and any point on the beam.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/x_point-1024x252.png)
+
+Parameter x
+
+3. The shear forces and bending moments can be calculated in dependence of x. Let’s make a first cut at a point between the support and the point load 0 x 1.0m.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/cut_point-1024x307.png)
+
+Force equilibrium at point 0 < x < 1.0m
+
+As for the reaction force calculation, the equilibrium conditions are used to calculate the moment and shear forces at point x
+
+∑�=0:��=0
+
+∑�=0:0.3725kN–��=0 -> ��=0.3725kN
+
+∑�=0:��–0.3725kN⋅�=0 -> ��=0.3725kN⋅�
+
+As we can see the shear force is **constant** and not dependent on the parameter x. Let’s set x = 1.0m and see what results we get for the bending moment:
+
+�1.0�=0.3725kN⋅1.0�=0.3725kNm
+
+In dependence of x and the Point load Q = 0.745kN a general formula for the bending moment of a simply supported beam for 0xl/2 can be formulated as:
+
+��=1/2⋅�⋅�
+
+You might have already come across the formula when we set x=l/2
+
+����=1/2⋅�⋅�/2=1/4⋅��
+
+**4. Cut at a point between the point load and the endpoint 1.0mx2.0m**
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/simply_supported_x2-1024x274.png)
+
+Force equilibrium at point 1.0m < x < 2.0m
+
+The equilibrium conditions lead to
+
+∑�=0:��=0
+
+∑�=0:0.3725��–��–0.745��=0 -> ��=−0.3725��
+
+∑�=0:��–0.3725��⋅�+0.745��⋅(�−1.0�)=0
+
+��=0.3725��⋅�–0.745��⋅�+0.745���=−0.3725��⋅�+0.745���
+
+### 💡
+
+**Tip:**  
+The calculation of the bending moment distribution at 1.0 < x < 2.0m can be calculated much quicker when the left side of the beam is cut (see next picture).
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/x_4-1024x291.png)
+
+Another possibility of equilibrium for 2.0m > x > 1.0m
+
+**5. Bending moment and shear force diagrams**
+
+The diagrams can be plotted by a tool like Excel using the formulas from above or drawn by hand when one is aware of the geometrical shape of the distribution.
+
+_Shear force diagram – simply supported beam_
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/shear_bench-1024x212.png)
+
+Point load shear force distribution. Simply supported beam.
+
+_Bending moment diagram – simply supported beam_
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/Moment_linear-1024x247.png)
+
+Point load bending moment distribution. Simply supported beam.
+
+### 👨‍🏫 Bending moment and shear forces of a beam – Line load on the secondary roof beam
+
+1.As for the Point load, we first calculate the **reaction forces ��,��** **and moment** **��** in the determinate structure – simply supported beam – due to the equilibrium conditions.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/reactions_simply-1024x258.png)
+
+Line load applied on cantilever beam.
+
+∑�=0:��=0
+
+∑�=0:��+��–0.11kN/m⋅5.0�=0 -> ��=0.5⋅0.11kN/m⋅5m=0.275kN
+
+∑�=0:��=��=0
+
+2. Calculation of the **shear and moment distribution** along the beam due to the reaction forces. The parameter x is introduced as the length between point a and any point on the beam.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/x_simply-1024x217.png)
+
+Parameter x
+
+3. The shear forces and bending moments can be calculated in dependence of x. Let’s make a cut at a point between the support a and support b 0x5.0m.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/forces_at_x-1024x264.png)
+
+Force equilibrium at point 0 < x < 5.0m
+
+As for the reaction force calculation, the equilibrium conditions are used to calculate the moment and shear forces at point x.
+
+∑�=0:��=0
+
+∑�=0:��+0.11kN/m⋅�–0.275kN=0 -> ��=0.275kN–0.11kN/m⋅�
+
+∑�=0:��–0.275kN⋅�+0.11kN/m⋅�22=0 -> ��=0.275kN⋅�–0.11kN/m⋅�22
+
+### ❗
+
+Do you still follow us? Or was the moment calculation a bit too quick? Let us know in the comments below.
+
+Compared to the distribution due to a **point load,** the shear force distribution is now **linear** and dependent on the parameter x.
+
+From the moment formulation, we can now derive the famous formula for the maximum bending moment of a simply supported beam due to a line load. Let’s set x = l/2=2.5m.
+
+**Formula for maximum bending moment in simply supported beam ��2/8**
+
+In order to get the formula we change the load and reaction values to variables. The line load 0.11kN/m is used as q and the reaction force �� equals ql/2.
+
+��=�⋅�/2⋅�–�⋅�22
+
+��/2=�⋅�/2⋅�/2–�⋅(�/2)22=�⋅�2/4–�⋅�28=�⋅�2/8
+
+��/2=0.11kN/m⋅(5m)2/8=0.34kNm
+
+**Formula for maximum shear force in simply supported beam ��/2**
+
+As for the bending moment we change the load and reaction values to variables. The line load 0.11kN/m is used as q and the reaction force �� equals ql/2.
+
+��=�⋅�/2–�⋅�
+
+Now, the maximum shear force acts right next to the supports, therefore x is set to 0, or l
+
+**�0=�⋅�/2–0**
+
+�0=0.11kN/m⋅5m/2=0.275kN
+
+**4. Bending moment and shear force diagrams**
+
+The diagrams can be plotted by a tool like Excel using the formulas from above or drawn by hand when one is aware of the geometrical shape of the distribution.
+
+_Shear force diagram – simply supported beam_
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/shear_diagram-1024x262.png)
+
+Shear force diagram. Simply supported beam. Line load. Linear shape.
+
+_Bending moment diagram – simply supported beam_
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/bending-moment-2-1024x257.png)
+
+Bending moment diagram. Simply supported beam. Line load. Parabolic shape.
+
+Once the forces and moments are calculated for different load cases like
+
+- [snow load](https://structuralbasics.com/how-to-calculate-the-snow-load-of-a-flat-roof/)
+- [wind load](https://structuralbasics.com/how-to-calculate-the-wind-loads-of-a-flat-roof/)
+- [dead load](https://structuralbasics.com/loads-on-roof-structures/#:~:text=1.Dead%20load%20%7C%20self%2Dweight)
+- live load
+
+and loads are combined in [load combinations](https://structuralbasics.com/load-combinations/), the **design of the element** needs to be done.
+
+In our case that is the timber design of the secondary beam, meaning that we pick the timber type, calculate the required cross-sectional dimensions and much more.
+
+We actually calculated the flat roof in full scale in this [article](https://structuralbasics.com/flat-roof-beam-design/).
+
+Now, I would like to hear from you: What simply supported structures do you know from the “real world”? Did I forget some? Let us know in the comments below📝
