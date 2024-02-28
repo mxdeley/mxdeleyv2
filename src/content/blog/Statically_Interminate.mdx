@@ -1,0 +1,175 @@
+---
+title: Steel What are Statically Determinate & Indeterminate Structures?
+description: A quick example on the difference between stically determinate and indeterminate structures.
+date: "2023-02-26"
+image: https://ik.imagekit.io/mxdeley/header_3.png?updatedAt=1706442122515
+authors:
+  - mxdeley
+---
+
+What are Statically Determinate & Indeterminate Structures?
+
+![Statically determinate and indeterminate structures differences degree of indeterminancy with examples](https://www.structuralbasics.com/wp-content/uploads/2022/08/Statically-determinate-and-indeterminate-structures-differences-degree-of-indeterminancy-with-examples.png)
+
+Calculating internal forces by hand is one of the first things Civil engineering students learn at university.
+
+But internal forces can only be calculated in the simple way with the 3 equilibrium equations if the structure is **Determinate**.
+
+If a structure is statically **Indeterminate**, then more complicated methods need to be used to calculate Moments, reaction, shear and axial forces.
+
+So in this article, we’ll show, what statically determinate and indeterminate structures are and how to calculate the degree of indeterminacy for different structures.
+
+Here is a quick overview of what we cover in this post
+
+- [🙋‍♂️ What's the difference between Internal and External Determinate Structures?](https://www.structuralbasics.com/statically-determinate-structures/#-whats-the-difference-between-internal-and-external-determinate-structures)
+- [❔ What is a statically determinate structure?](https://www.structuralbasics.com/statically-determinate-structures/#-what-is-a-statically-determinate-structure)
+- [🤔 What is a statically indeterminate structure?](https://www.structuralbasics.com/statically-determinate-structures/#-what-is-a-statically-indeterminate-structure)
+- [🧮 Determinacy Equations](https://www.structuralbasics.com/statically-determinate-structures/#--determinacy-equations)
+- [📃 References](https://www.structuralbasics.com/statically-determinate-structures/#-references)
+
+But now, let’s get started.
+
+## 🙋‍♂️ What’s the difference between Internal and External Determinate Structures?
+
+Before we explain what statically determinate structures are, we first have to mention that when we talk about **determinacy & indeterminacy** in this post, then we mean **Internal Determinacy**, instead of **External**.
+
+#### Explanation
+
+**External (In)determinacy**:
+
+> The **reaction/support forces** in an externally statically determinate structure can be calculated by the **3 Equilibrium equations**. If the reaction components can’t be calculated, then the structure is externally statically indeterminate.
+
+**Internal (In)determinacy:**
+
+> Compared to External determinacy, the internal forces (Moment, Shear & Normal force) can be calculated by the 3 Equilibrium equations additionally to the **reaction/support forces** in an Internally Statically Determinate Structure. If the internal forces and reaction components can’t be calculated, then the structure is **Internally Indeterminate**.
+
+#### So what’s the Difference?
+
+While in Externally & Internally Determinate structures the reaction forces can be calculated by the 3 Equilibrium equations, the Internal forces can only be calculated in Internally Determinate structures.
+
+When we talk about statically determinate structures in this post, then we mean Internally determinate structures.
+
+## ❔ What is a statically determinate structure?
+
+Statically determinate structures are structures in which the reaction forces and the internal forces can be calculated by the 3 Equilibrium equations.
+
+Vertical equilibrium: ∑�=0
+
+Horizontal equilibrium: ∑�=0
+
+Moment equilibrium: ∑�=0
+
+### Examples of statically determinate structures are:
+
+- Simply supported beam
+- Cantilever beam
+- Column (roller + pin support)
+- 3-hinge arch
+- Truss (Not all trusses)
+
+![Simply supported beam. Example of a statically determinate structure. 3 Reaction forces.](https://structuralbasics.com/wp-content/uploads/2022/08/Statically-determinate-structure-simply-supported-beam-1024x267.png)
+
+Simply supported beam. Example of a statically determinate structure. 3 Reaction forces.
+
+![Cantilever beam. Example of a statically determinate structure. 3 Reaction forces.](https://structuralbasics.com/wp-content/uploads/2022/08/Statically-determinate-structure-cantilever-beam-1024x334.png)
+
+Cantilever beam. Example of a statically determinate structure. 3 Reaction forces.
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/Statically-determinate-structure-column.png)
+
+Column. Example of a statically determinate structure.
+
+## 🤔 What is a statically indeterminate structure?
+
+**Statically Indeterminate Structures** are structures in which the reaction forces and the internal forces **CAN NOT** be calculated by the 3 Equilibrium equations.
+
+When trying to solve the 3 Equilibrium equations for an indeterminate structure, you will experience that you have 4 or more Unknowns (Reaction & Internal forces) for 3 equations.
+
+### Examples of statically indeterminate structures are:
+
+- Continuous beams
+- Frames
+- Some Trusses
+
+![Rigid frame as example of a statically indeterminate structure.](https://structuralbasics.com/wp-content/uploads/2022/08/Rigid-frame-as-example-for-statically-indeterminate-structure-1024x665.png)
+
+Rigid frame as example of a statically indeterminate structure. 6 Reaction forces.
+
+## 🧮 Determinacy Equations
+
+#### Beams & Frames [[1]](https://www.structuralbasics.com/statically-determinate-structures/#reference1 "[1]"):
+
+The degree of indeterminacy D for beams and frames is calculated as
+
+�=3�+�–3�–�
+
+Where
+
+- n = amount of members
+- r = external restraints (number of support reactions)
+- j = number of joints
+- c = number of releases introduced (internal hinges)
+
+Let’s have a look at some *examples*.
+
+#### 3 span continuous beam
+
+![Statical determinacy of a 3 span continuous beam.](https://structuralbasics.com/wp-content/uploads/2022/08/Statical-determinancy-of-3-span-contineous-beam-1024x191.png)
+
+Statical determinacy calculation of a 3 span continuous beam.
+
+�=3⋅3+5–3⋅4–0=9+5–12=2
+
+D = 2 means that the structure is statically indeterminate to the 2nd degree. The reaction & internal forces **CAN NOT** be calculated by the 3 Equilibrium equations.
+
+#### 3 span continuous beam with hinge
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/Statical-determinancy-of-3-span-contineous-beam-with-hinge-1024x222.png)
+
+Statical determinacy calculation of a 3 span continuous beam with a hinge.
+
+�=3⋅4+5–3⋅5–1=12+5–15–1=1
+
+D = 1 means that the structure is statically indeterminate to the 1st degree. The reaction & internal forces **CAN NOT** be calculated by the 3 Equilibrium equations.
+
+### Trusses [[1]:](https://www.structuralbasics.com/statically-determinate-structures/#reference1 "[1]:")
+
+The degree of indeterminacy D for trusses is calculated as
+
+�=�+�–2�
+
+Where
+
+- n = amount of members
+- r = external restraints (number of support reactions)
+- j = number of joints
+
+Let’s have a look at some *examples*.
+
+#### Warren Truss
+
+![Statical determinacy of a Warren Truss](https://structuralbasics.com/wp-content/uploads/2022/08/statical-determinancy-of-truss-1024x354.png)
+
+Statical determinacy of a Warren Truss
+
+�=11+3–2⋅7=0
+
+D = 0 means that the structure is statically determinate. The reaction & internal forces can be calculated by the 3 Equilibrium equations.
+
+#### Howe Truss
+
+![](https://structuralbasics.com/wp-content/uploads/2022/08/Statical-determinancy-of-howe-truss-1024x340.png)
+
+Statical determinacy of a Howe Truss
+
+�=21+3–2⋅12=0
+
+D = 0 means that the structure is statically determinate. The reaction & internal forces can be calculated by the 3 Equilibrium equations.
+
+If you are new to structural design, then check out our design tutorials where you can learn how to use the calculated bending moments and shear forces to design structural elements such as
+
+- [Design of timber roof beams](https://www.structuralbasics.com/flat-roof-beam-design/#:~:text=Now%20that%20we,the%20secondary%20beam)
+- [Buckling design of timber columns](https://www.structuralbasics.com/timber-column-design/#:~:text=Buckling%20Verification%20%2D%20Timber%20column)
+- [Buckling design of the collar beam](https://www.structuralbasics.com/collar-beam-design/#:~:text=Buckling%20Verification%20%2D%20Collar%20beam)
+
+But now I would like to know from you, have you understood the concept of Bending moment, shear and normal force? Because I remember, it took me almost my entire 1st semester to really understand how to calculate moments. So let us know in the comments✍️, if you want more detailed posts and how you learned the concept of Moments.
